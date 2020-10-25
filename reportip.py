@@ -62,13 +62,13 @@ def get_lan_ip():
 class Getmyip:
     def getip(self):
         try:
-            myip = self.visit("http://1111.ip138.com/ic.asp")
+            myip = self.visit("https://httpbin.org/ip")
         except:
             try:
-                myip = self.visit("http://ip.chinaz.com/")
+                myip = self.visit("http://members.3322.org/dyndns/getip")
             except:
                 try:
-                    myip = self.visit("http://www.whereismyip.com/")
+                    myip = self.visit("http://ipv4.icanhazip.com/")
                     # if you want to add more,use the format "except try"
                     # make sure the most useful link be the first
                 except:
